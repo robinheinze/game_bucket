@@ -1,0 +1,17 @@
+<li class = 'row'>
+  <div class='col-sm-4'>
+    {{#link-to 'game' this class='non-link'}}<img {{bind-attr src='image' class='img-responsive'}}/>{{/link-to}}
+  </div>
+  <div class='col-sm-8'>
+    <h4>{{#link-to 'game' this class='non-link'}}{{title}} ({{year}}){{/link-to}}</h4>
+    <p class='text-muted'>By {{company}}</p>
+    <div>
+      <p>{{description}}</p>
+      {{#if inProgress }}
+      <p> Status: In Progress </p>
+      {{else}}
+      <p> Status: Complete! </p>
+      {{/if}}
+    </div>
+  </div>
+</li>

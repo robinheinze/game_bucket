@@ -1,0 +1,20 @@
+<div class='row'>
+  <div class='col-sm-3'>
+    <div class='list-group'>
+    {{#link-to 'games.complete' classNames='list-group-item'}}Complete{{/link-to}}
+    {{#link-to 'games.incomplete' classNames='list-group-item'}}In Progress{{/link-to}}
+    {{#link-to 'games.all' classNames='list-group-item'}}All{{/link-to}}
+    </div>
+    <div class='list-group'>
+      {{#each}}
+        {{#link-to 'game' this classNames='list-group-item'}}
+          {{title}}
+        {{/link-to}}
+      {{/each}}
+    </div>
+    {{#link-to 'games.new' tagName='button' class='btn btn-default'}}Add a Game{{/link-to}}
+  </div>
+  <div class='col-sm-9'>
+    {{outlet}}
+  </div>
+</div>

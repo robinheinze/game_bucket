@@ -1,0 +1,19 @@
+<div class='row'>
+  <div class='col-sm-7 new_game'>
+  <h2>New Game</h2>
+    <label for='title'>Title</label>
+    {{input valueBinding='title' class='form-control'}}
+    <label for='description'>Description</label>
+    {{textarea valueBinding='description' class='form-control'}}
+    <label for='image'>Image URL</label>
+    {{input valueBinding='image' class='form-control'}}
+    <label for='year'>Year</label>
+    {{input valueBinding='year' class='form-control'}}
+    <label for='console'>Console</label>
+    {{input valueBinding='console' class='form-control'}}
+    <label for='company'>Company</label>
+    {{input valueBinding='company' class='form-control'}}
+    <br>
+    <button {{action 'createGame'}} class='btn btn-default'>Add Game</button>
+  </div>
+</div>

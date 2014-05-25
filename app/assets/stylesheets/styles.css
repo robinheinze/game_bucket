@@ -1,0 +1,65 @@
+/* Put your CSS here
+
+dark: #081724
+#589494
+#8EBBB4
+#D0DCD0
+light(cream): #F5EED2;
+
+*/
+
+
+
+body {
+  background-color: #D0DCD0;
+  color: #081724;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-default .navbar-brand, .navbar, .navbar-default {
+  background-color: #589494;
+  color: #081724;
+}
+
+.navbar {
+  background-color: #589494;
+  color: #081724;
+}
+
+.logo {
+  font-family: 'Gruppo', cursive;
+  color: #081724;
+  font-size: 40px;
+}
+.non-link {
+  color: #081724;
+}
+
+.non-link:hover {
+  text-decoration: none;
+  color: #081724;
+  cursor: pointer;
+}
+.non-link:focus {
+  text-decoration: none;
+  color: #081724;
+}
+
+.list-group > a.active {
+  background-color: #589494;
+  border-color: #589494;
+  color: white;
+}
+
+.list-group > a.active:hover {
+  background-color: #589494;
+  border-color: #589494;
+  color: white;
+}
+
+.list-group > a.active:focus {
+  background-color: #589494;
+  border-color: #589494;
+  color: white;
+}
+

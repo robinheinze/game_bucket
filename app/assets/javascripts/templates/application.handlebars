@@ -1,0 +1,16 @@
+<nav class='navbar navbar-default'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      {{#link-to 'index' class='logo navbar-brand non-link' tagName='a'}}The Game Bucket{{/link-to}}
+    </div>
+    <form class="navbar-form navbar-right" role="search">
+      {{input valueBinding='keyword' class="form-control" placeholder="Search"}}
+      <button {{action createSearch}} class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</nav>
+
+<div class='container wrapper'>
+
+{{outlet}}
+</div>
